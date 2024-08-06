@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coboshub</title>
+    <link rel="stylesheet" href="../src/styles/css/estiloIndex.css">
+    <link rel="stylesheet" href="../src/styles/css/estiloMenu.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../node_modules/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="container-fluid" id="contenedorPrincipal">
+        <header>
+            <div>
+                <div class="row">
+                    <div class="col-sm-4 mt-3">
+
+                        <h3>CobosHub</h3>
+                    </div>
+                    <div class="col-sm-6 mt-3">
+                        <div class="input-group">
+                            <div class="dropdown">
+                                <button id="categorias-btn" class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorías
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="../src/views/guitarEle.html">Telefonia</a></li>
+                                    <li><a class="dropdown-item" href="../src/views/guitarAcu.html">Video juegos</a></li>
+                                    <li><a class="dropdown-item" href="../src/views/bajos.html">Calzado</a></li>
+                                    <li><a class="dropdown-item" href="../src/views/bajos.html">Hogar</a></li>
+                                </ul>
+                            </div>
+
+                            <input class="form-control" type="text" name="txtBuscar" placeholder="Buscar">
+                            <button class="btn btn-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </button>
+                                <button class="nav-link btn btn-warning" href="#" data-bs-toggle="offcanvas" data-bs-target="#carritoCompras">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                      </svg>
+                                      <div class="offcanvas offcanvas-end text-bg-dark" id="carritoCompras" tabindex="-1" aria-labelledby="carritoLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Carrito de Compras</h5>
+                                            <button type="button" data-bs-dismiss="offcanvas"></button>
+                                        </div>
+                                    </div>
+                                </button>
+                        
+                        </div>
+                </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTodo">
+                        <i class="fa-solid fa-bars"></i> Todo
+                    </a>
+                    <!-- Offcanvas Sidebar for Todo -->
+                    <div class="offcanvas offcanvas-start text-bg-dark" id="offcanvasTodo" tabindex="-1" aria-labelledby="offcanvasTodoLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasTodoLabel">Categorías y más</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-group">
+                                
+                                    <p>Electronica</p>
+                                    <ul >
+                                        <li ><a href="#">Televisores</a></li>
+                                        <li ><a href="#">Celulares</a></li>
+                                        <li ><a href="#">Computadoras</a></li>
+                                    </ul>
+                                </li>
+                               
+                                   <P>Moda</P>
+                                    <ul>
+                                        <li><a href="#">Hombres</a></li>
+                                        <li><a href="#">Mujeres</a></li>
+                                        <li><a href="#">Niños</a></li>
+                                    </ul>
+                                </li>
+                               
+                                    <p>Hogar</p>
+                                    <ul>
+                                        <li><a href="#">Muebles</a></li>
+                                        <li><a href="#">Decoración</a></li>
+                                        <li><a href="#">Cocina</a></li>
+                                    </ul>
+                                </li>
+
+                                    <p>Deportes</p>
+                                    <ul>
+                                        <li><a href="#">Equipos</a></li>
+                                        <li><a href="#">Ropa</a></li>
+                                        <li><a href="#">Accesorios</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li >
+                    <a href="laspromociones.html">Promociones</a>
+                   
+                </li>
+
+                <li>
+                    <a href="">Lo mas vendido</a>
+                </li>
+
+                <li>
+                    <a href="">Todo</a>
+                </li>
+
+                <li id="Perfil">
+                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#perfil">
+                        <i class="fa-solid fa-bars"></i> Perfil
+                    </a>
+                    <!-- Offcanvas Sidebar -->
+                    <div class="offcanvas offcanvas-end text-bg-dark" id="perfil">
+                        <div class="offcanvas-header">
+                            <h1 class="offcanvas-title">Perfil</h1>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="card" style="width:100px">
+                            <img class="card-img-top" src="../public/assets/img/imagenes promociones/inicio.png" alt="Card image">
+                            <div class="card-body">
+                              <a href="iniciosecion.html" class="btn btn-primary">Iniciar Sesion</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+        <section>
+            <iframe src="../src/view/promociones.html" width="100%" height="100%" frameborder="0"></iframe>
+            
+        </section>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3 product-card">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/assets/img/imagenes promociones/xbox.jpeg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="product-title">FrigoBar Xbox S|X</h4>
+                            <p class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (4.5)
+                            </p>
+                            <p class="product-reviews">1,234 opiniones</p>
+                            <p class="card-text">$1,500.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resto de los productos -->
+                <div class="col-md-3 product-card">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/assets/img/imagenes promociones/panda.jpeg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="product-title">Nike panda</h4>
+                            <p class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (4.5)
+                            </p>
+                            <p class="product-reviews">789 opiniones</p>
+                            <p class="card-text">$2,000.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/assets/img/imagenes promociones/ps5.jpeg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="product-title">Play Station 5</h4>
+                            <h8 class="product-title">EDITION Spider-Man 2</h8>
+                            <p class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (4.5)
+                            </p>
+                            <p class="product-reviews">2,345 opiniones</p>
+                            <p class="card-text">$14,500.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product-card">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/assets/img/imagenes promociones/iphone.jpeg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="product-title">Iphone 13</h4>
+                            <p class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (4.5)
+                            </p>
+                            <p class="product-reviews">Opiniones: 1,234</p>
+                            <p class="card-text">Precio: $18,000.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product-card">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/assets/img/imagenes promociones/tv.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="product-title">Televisor LED Ultra HD</h4>
+                            <p class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                (4.2)
+                            </p>
+                            <p class="product-reviews">Opiniones: 789</p>
+                            <p class="card-text">Precio: $12,200.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product-card">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/assets/img/imagenes promociones/vestido.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="product-title">Vestido Floral Verano</h4>
+                            <p class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                (4.2)
+                            </p>
+                            <p class="product-reviews">Opiniones: 567</p>
+                            <p class="card-text">Precio: $200.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product-card">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/assets/img/imagenes promociones/mesa.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="product-title">Mesa de Centro Moderna</h4>
+                            <p class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                (3.0)
+                            </p>
+                            <p class="product-reviews">Opiniones: 345</p>
+                            <p class="card-text">Precio: $3,000.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product-card">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/assets/img/imagenes promociones/tenis.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="product-title">Tenis para Correr</h4>
+                            <p class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (4.5)
+                            </p>
+                            <p class="product-reviews">Opiniones: 890</p>
+                            <p class="card-text">Precio: $300.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                                                
+                
+
+                        <footer>
+                            <div class="footer">
+                                <div class="footer-links">
+                                    <a href="#">Acerca de CobosHub</a>
+                                    <a href="#">Carreras</a>
+                                    <a href="#">Prensa</a>
+                                    <a href="#">CobosHub y sostenibilidad</a>
+                                    <a href="#">Inversores</a>
+                                    <a href="#">CobosHub Devices</a>
+                                    <a href="#">CobosHub Tours</a>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </div>
+                                <p>&copy; 2024 CobosHub.com. Todos los derechos reservados.</p>
+                            </div>
+                            
+
+        </footer>
+    </div>
+      
+</body>
+</html>

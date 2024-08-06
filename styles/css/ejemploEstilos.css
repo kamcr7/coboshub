@@ -1,0 +1,38 @@
+/*p {
+    color: red;
+    text-align: center;
+  }
+  body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  
+  h1 style="border: 2px solid Tomato;
+
+  IMAGEN DE FONDO 
+  <style>
+  body{
+      background-image: url(https://previews.123rf.com/images/katrink03/katrink031703/katrink03170300036/75843828-conjunto-de-iconos-para-tienda-en-l%C3%ADnea-fondo-transparente.jpg);
+  }
+</style>
+
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+
+BORDES
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+TIPO DE LETRA
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}

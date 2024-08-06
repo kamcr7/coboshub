@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../src/styles/css/estiloregistro.css">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Registro de Usuario</h1>
+        <form id="registroForm" method="post" action="../src/componets/PHP/crearCuenta.php">
+            <div class="campo">
+                <input type="text" name="username" required>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="campo">
+                <input type="email" name="email" required>
+                <label>Correo electrónico</label>
+            </div>
+            <div class="campo">
+                <input type="password" name="password" required>
+                <label>Contraseña</label>
+            </div>
+            <input type="submit" value="Registrarse" class="boton">
+            <div class="iniciar_sesion">
+                ¿Ya tienes una cuenta? <a href="iniciosecion.html">Inicia sesión</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

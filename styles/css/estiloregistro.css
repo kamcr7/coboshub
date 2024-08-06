@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    height: 100vh;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario form {
+    width: 100%;
+}
+
+.campo {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    background: none;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus {
+    border-color: #6c3483;
+}
+
+.campo label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #adadad;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.campo input:focus ~ label,
+.campo input:valid ~ label {
+    top: -12px;
+    font-size: 12px;
+    color: #6c3483;
+}
+
+.boton {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background: #232f3e;
+    color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background: #232f3e;
+}
+
+.iniciar_sesion {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.iniciar_sesion a {
+    color: blue;
+    text-decoration: none;
+}
+
+.iniciar_sesion a:hover {
+    text-decoration: underline;
+}

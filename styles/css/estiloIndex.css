@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(255, 255, 255);
+    }
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+#contenedorPrincipal{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 1px solid rgb(255, 255, 255);
+}
+header{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #232f3e;
+    color:white;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: pink;
+    color: black;
+}
+section{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: pink;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background: color #158e6c;;
+    color: rgb(46, 45, 45);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #158e6c;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #060606;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cards */
+    list-style-type: none;
+}
+
+.contenedor li {
+    flex: 1 0 300px; /* Hace que todas las cards tengan el mismo tamaño fijo */
+    max-width: 300px; /* Establece un máximo para que no se hagan demasiado grandes */
+}
+
+.contenedor .card {
+    height: 100%; /* Asegura que todas las cards tengan la misma altura */
+    border: 1px solid #0cf5a7;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .card-img-top {
+    width: 100%;
+    height: auto;
+    flex: 1; /* La imagen ocupa el espacio disponible */
+}
+
+.contenedor .card-body {
+    padding: 20px;
+}
+
+.contenedor .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #e706af;
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.contenedor .btn:hover {
+    background-color: #41f30b;
+}
+
+.offcanvas-body ul {
+    padding-left: 0;
+}
+
+.offcanvas-header, .offcanvas-body {
+    background-color: #000000;
+}
+.offcanvas-header .offcanvas-title {
+    color: #040404;
+    
+}
